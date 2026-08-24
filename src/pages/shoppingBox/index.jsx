@@ -38,7 +38,7 @@ function ShoppingBox() {
 
     if (carItems.length === 0) {
         return (
-            <div style={{ padding: "0 13.02%" }}>
+            <section style={{ padding: "0 13.02%" }}>
                 <h1 style={{
                     padding: "50px 0",
                     fontWeight: 700,
@@ -47,13 +47,13 @@ function ShoppingBox() {
                     borderBottom: "1px solid #eaeaea"
                 }}>Корзина</h1>
                 <p style={{ fontSize: '24px', textAlign: 'center' }}>Корзина пуста</p>
-            </div>);
+            </section>);
     }
 
 
     return (<>
 
-        <div style={{ padding: "0 13.02%" }}>
+        <section style={{ padding: "0 13.02%" }}>
             <h1 style={{
                 padding: "50px 0",
                 fontWeight: 700,
@@ -147,7 +147,7 @@ function ShoppingBox() {
 
                 </div>
             </div>
-        </div>
+        </section>
     </>)
 }
 export default ShoppingBox;
