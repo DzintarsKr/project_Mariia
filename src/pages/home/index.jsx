@@ -26,7 +26,7 @@ function Home() {
         loadProducts();
     }, []);
 
-    return (<div>
+    return (<section>
         <Banner /> 
         <div className={style.container_home}>
             <h2>Товары</h2>
@@ -38,6 +38,6 @@ function Home() {
         </div>
 
 
-    </div>)
+    </section>)
 }
 export default Home;

@@ -1,0 +1,139 @@
+.socialImage {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.contactContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.formBlock {
+    width: 55%;
+}
+
+.inputRow {
+    display: flex;
+    gap: 39px;
+    margin-bottom: 39px;
+}
+
+.input {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 66px;
+    border: none;
+    background-color: #fafafa;
+    outline: none;
+    border-radius: 10px;
+}
+
+.messageInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 116px;
+    border: none;
+    background-color: #fafafa;
+    outline: none;
+    border-radius: 10px;
+}
+
+.socialBlock {
+    width: 32%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fafafa;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.socialTitle {
+    margin: 18px 0 39px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonWrapper {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 31px;
+}
+
+.submitButton {
+    height: 53px;
+    padding: 10px 18px;
+    background-color: #080c18;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .contactContent {
+        gap: 30px;
+    }
+
+    .inputRow {
+        gap: 20px;
+    }
+
+    .socialLinks {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contactContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formBlock,
+    .socialBlock {
+        width: 100%;
+    }
+
+    .buttonWrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .inputRow {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .socialLinks {
+        gap: 30px;
+    }
+}
